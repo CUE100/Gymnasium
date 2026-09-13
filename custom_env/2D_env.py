@@ -8,7 +8,7 @@ class environment(gym.Env):
 
     def __init__(self, size: int = 5, render_mode: Optional[str] = None):
         self.size = size
-        self.render_mode = render_mode #not used
+        self.render_mode = render_mode 
 
         self._llm_location = np.array([-1, -1], dtype=np.int32)
         self._target_location = np.array([-1, -1], dtype=np.int32)
